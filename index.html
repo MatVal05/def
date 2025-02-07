@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test con affermazioni</title>
+    <style>
+        .block {
+            margin-bottom: 30px;
+        }
+        .hidden {
+            display: none;
+        }
+        .showResult {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block">
+        <h3>Primo blocco</h3>
+        <ul>
+            <li><input type="checkbox" id="q1" /> 1. A routine is a part of a program. (true)</li>
+            <li><input type="checkbox" id="q2" /> 2. As routines change, they gain stability. (false)</li>
+            <li><input type="checkbox" id="q3" /> 3. Organization theory is in a critical position. (false)</li>
+            <li><input type="checkbox" id="q4" /> 4. Routines or schedules in Clinical Practice are not easy to follow. (true)</li>
+            <li><input type="checkbox" id="q5" /> 5. Emergency care often calls for quick reaction and not protocol. (true)</li>
+            <li><input type="checkbox" id="q6" /> 6. Members of staff should follow protocols set out by the departments. (true)</li>
+            <li><input type="checkbox" id="q7" /> 7. As the work is so long and tiring members of staff might work 12 hour shifts. (false)</li>
+            <li><input type="checkbox" id="q8" /> 8. Surgeons work in the emergency department every weekend and are on duty in general surgery as well as the out patients' one weekend in three, for a couple of hours. (false)</li>
+            <li><input type="checkbox" id="q9" /> 9. A typical day for a surgeon begins at 8.00 a.m. when he checks his duty schedule. (true)</li>
+            <li><input type="checkbox" id="q10" /> 10. The doctor sometimes finds time to calm and soothe the patients. (true)</li>
+            <li><input type="checkbox" id="q11" /> 11. When a doctor hears a beeper he must run to the casualty department. (false)</li>
+            <li><input type="checkbox" id="q12" /> 12. A surgeon checks dressings and drainage tubes on both pre and post operative patients. (false)</li>
+            <li><input type="checkbox" id="q13" /> 13. The staff nurse checks over the case notes after the surgeon's prescription. (false)</li>
+            <li><input type="checkbox" id="q14" /> 14. The surgeon may assist in the theatre when he is on duty and on call in General Surgery. (false)</li>
+            <li><input type="checkbox" id="q15" /> 15. Patients who undergo operations insert cannulae. (false)</li>
+            <li><input type="checkbox" id="q16" /> 16. The nursing staff contacts the anaesthetist as regards pre-medication. (false)</li>
+            <li><input type="checkbox" id="q17" /> 17. The nursing staff fill in discharge forms. (false)</li>
+            <li><input type="checkbox" id="q18" /> 18. The surgeon must always find time to speak to patients' relatives. (false)</li>
+            <li><input type="checkbox" id="q19" /> 19. The surgeon often looks up some medical abstracts in the library. (false)</li>
+            <li><input type="checkbox" id="q20" /> 20. Operation day is a routine day. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Secondo blocco</h3>
+        <ul>
+            <li><input type="checkbox" id="q21" /> 1. The patient in the Orthopaedic Out-Patients' Department still has his ankle in plaster. (false)</li>
+            <li><input type="checkbox" id="q22" /> 2. The Orthopaedic Surgeon would rather just look at the x-rays than see the patient's ankle. (false)</li>
+            <li><input type="checkbox" id="q23" /> 3. The patient has been attending the Rehabilitation Centre since his operation. (false)</li>
+            <li><input type="checkbox" id="q24" /> 4. The patient had an operation on his ankle some time before. (true)</li>
+            <li><input type="checkbox" id="q25" /> 5. Since the operation the patient has not been feeling too bad. (false)</li>
+            <li><input type="checkbox" id="q26" /> 6. The patient feels better thanks to the physiotherapy sessions. (true)</li>
+            <li><input type="checkbox" id="q27" /> 7. The doctor seems to be a little astonished by the patient. (true)</li>
+            <li><input type="checkbox" id="q28" /> 8. The biologist can't find the slides. (false)</li>
+            <li><input type="checkbox" id="q29" /> 9. The lab. technician is getting a telling off. (true)</li>
+            <li><input type="checkbox" id="q30" /> 10. The biologist has been behaving strangely. (true)</li>
+            <li><input type="checkbox" id="q31" /> 11. The biologist doesn't believe her workmate. (true)</li>
+            <li><input type="checkbox" id="q32" /> 12. Mr. Miles has gone for a chest x-ray to see if he has got over the flu. (false)</li>
+            <li><input type="checkbox" id="q33" /> 13. The after effects of flu have left Mr. Miles with a cough. (true)</li>
+            <li><input type="checkbox" id="q34" /> 14. Mr. Miles hasn't been feeling well for some time and now he's worried. (true)</li>
+            <li><input type="checkbox" id="q35" /> 15. Mr. Miles has to take off all his clothes apart from his vest, trousers and pants. (false)</li>
+            <li><input type="checkbox" id="q36" /> 16. The radiographer only needs to take one x-ray of the patient's chest. (false)</li>
+            <li><input type="checkbox" id="q37" /> 17. Mr. Miles tries to find out about the x-ray from the radiologist. (false)</li>
+            <li><input type="checkbox" id="q38" /> 18. The radiographer doesn't want to tell Mr. Miles how ill he is. (false)</li>
+            <li><input type="checkbox" id="q39" /> 19. Mr. Miles has always been healthy. (true)</li>
+            <li><input type="checkbox" id="q40" /> 20. Even if he's elderly he gets breathless. (true)</li>
+            <li><input type="checkbox" id="q41" /> 21. Mr. Miles can get dressed and wait in the waiting room. (true)</li>
+            <li><input type="checkbox" id="q42" /> 22. The radiographer will tell Mr. Miles the results of the x-ray later. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Terzo blocco</h3>
+        <ul>
+            <li><input type="checkbox" id="q43" /> 1. The National Health Service in the U.K. is a public fund. (false)</li>
+            <li><input type="checkbox" id="q44" /> 2. England, Scotland, Wales and Northern Ireland have different healthcare management. (true)</li>
+            <li><input type="checkbox" id="q45" /> 3. In the U.K., primary healthcare is available for every citizen without discrimination. (true)</li>
+            <li><input type="checkbox" id="q46" /> 4. Ophthalmology and dentistry are public services. (true)</li>
+            <li><input type="checkbox" id="q47" /> 5. The Department of Health is responsible for the NHS in Scotland. (true)</li>
+            <li><input type="checkbox" id="q48" /> 6. The U.S. has not got government-run healthcare. (true)</li>
+            <li><input type="checkbox" id="q49" /> 7. Most people in the U.S. have health insurance through government programs. (false)</li>
+            <li><input type="checkbox" id="q50" /> 8. Emergency services are mandatory and free in the U.S. (true)</li>
+            <li><input type="checkbox" id="q51" /> 9. Hospital organization is not based on multi-disciplinary management. (false)</li>
+            <li><input type="checkbox" id="q52" /> 10. The system of administration in the U.K. is known as the General Administration. (false)</li>
+            <li><input type="checkbox" id="q53" /> 11. A doctor, a nurse and an executive are the three representatives of the Management Team. (false)</li>
+            <li><input type="checkbox" id="q54" /> 12. The National Health Service in the U.K. has many different staff groups for patient care. (true)</li>
+            <li><input type="checkbox" id="q55" /> 13. The Director of Nursing Services is responsible for the medical staff. (false)</li>
+            <li><input type="checkbox" id="q56" /> 14. A Ward Sister is in charge of many different units. (false)</li>
+            <li><input type="checkbox" id="q57" /> 15. A G.R.N. is not a qualified professional. (false)</li>
+            <li><input type="checkbox" id="q58" /> 16. There are various grades of nursing staff. (true)</li>
+            <li><input type="checkbox" id="q59" /> 17. An orthoptist is a qualified technician. (false)</li>
+            <li><input type="checkbox" id="q60" /> 18. Therapeutic care is only the responsibility of skilled professionals, such as EEG technicians. (false)</li>
+            <li><input type="checkbox" id="q61" /> 19. Shifts are always 8 hour shifts. (false)</li>
+            <li><input type="checkbox" id="q62" /> 20. Most hospital workers are off duty at weekends. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Quarto blocco</h3>
+        <ul>
+            <li><input type="checkbox" id="q63" /> 1. The hospital can be compared to a small town because of the number of people who work there. (true)</li>
+            <li><input type="checkbox" id="q64" /> 2. Some emergency events or procedures must be taken care of first. (true)</li>
+            <li><input type="checkbox" id="q65" /> 3. Both the medical ward and the surgical ward have the same Staff Nurse. (false)</li>
+            <li><input type="checkbox" id="q66" /> 4. The Ward state is important to know how many patients may be admitted and how many beds are vacant. (false)</li>
+            <li><input type="checkbox" id="q67" /> 5. The lab. tests are carried out in the wards. (true)</li>
+            <li><input type="checkbox" id="q68" /> 6. Labelling test tubes and specimen jars is only a formality. (false)</li>
+            <li><input type="checkbox" id="q69" /> 7. Somebody must accompany in-patients to other departments for tests and investigations. (true)</li>
+            <li><input type="checkbox" id="q70" /> 8. Some patients are bedridden. (false)</li>
+            <li><input type="checkbox" id="q71" /> 9. Health professionals have a duty to check the patients on the operation list. (true)</li>
+            <li><input type="checkbox" id="q72" /> 10. "Nil by mouth" is on a card on the patient's bedside table to remind him that he can't eat. (false)</li>
+            <li><input type="checkbox" id="q73" /> 11. When nurses in the Surgical Ward make the patients' beds, they never place pillows on the beds unless the patient undergoes an operation. (false)</li>
+            <li><input type="checkbox" id="q74" /> 12. It's a problem to queue up in the X-Ray department because the department is so crowded. (false)</li>
+            <li><input type="checkbox" id="q75" /> 13. The anaesthetist does not agree about the kind of anaesthetic to be used on the patients. (true)</li>
+            <li><input type="checkbox" id="q76" /> 14. The scrub nurse is helping the surgeon into the operation gown. (true)</li>
+            <li><input type="checkbox" id="q77" /> 15. The theatre assistant gets things ready for the surgery. (true)</li>
+            <li><input type="checkbox" id="q78" /> 16. The general practitioners' work isn't related to the operating theatre. (false)</li>
+            <li><input type="checkbox" id="q79" /> 17. The patient should be given the anaesthetic before the operation. (false)</li>
+            <li><input type="checkbox" id="q80" /> 18. The patients' files contain all the information the nurse needs. (true)</li>
+            <li><input type="checkbox" id="q81" /> 19. The nurse should wait before asking the surgeon to be called for some more consultations. (false)</li>
+            <li><input type="checkbox" id="q82" /> 20. The work of the operating theatre nurses is detailed in an operating theatre policy. (true)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <button onclick="checkAnswers()">Verifica le risposte</button>
+        <div id="result" class="hidden">
+            <h4>Risultati</h4>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script>
+        const answers = {
+            q1: true, q2: false, q3: false, q4: true, q5: true, q6: true, q7: false, q8: false, q9: true, q10: true,
+            q11: false, q12: false, q13: false, q14: false, q15: false, q16: false, q17: false, q18: false, q19: false, q20: false,
+            q21: false, q22: false, q23: false, q24: true, q25: false, q26: true, q27: true, q28: false, q29: true, q30: true,
+            q31: true, q32: false, q33: true, q34: true, q35: false, q36: false, q37: false, q38: false, q39: true, q40: true,
+            q41: true, q42: false, q43: false, q44: true, q45: true, q46: true, q47: true, q48: true, q49: false, q50: true,
+            q51: false, q52: false, q53: false, q54: true, q55: false, q56: false, q57: false, q58: true, q59: false, q60: false,
+            q61: false, q62: false, q63: true, q64: true, q65: false, q66: false, q67: true, q68: false, q69: true, q70: false,
+            q71: true, q72: false, q73: false, q74: false, q75: true, q76: true, q77: true, q78: false, q79: false, q80: true,
+            q81: false, q82: true
+        };
+
+        function checkAnswers() {
+            let score = 0;
+            const total = Object.keys(answers).length;
+            for (let i = 1; i <= total; i++) {
+                const q = `q${i}`;
+                const answer = document.getElementById(q);
+                if (answer && answer.checked === answers[q]) {
+                    score++;
+                }
+            }
+
+            const result = document.getElementById('result');
+            const resultText = document.getElementById('resultText');
+            resultText.innerHTML = `Hai risposto correttamente a ${score} su ${total} domande.`;
+            result.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
