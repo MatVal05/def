@@ -5,84 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test con affermazioni</title>
     <style>
-        /* Reset dello stile per una visualizzazione uniforme */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-            padding: 20px;
-        }
-
-        h3 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
         .block {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
             margin-bottom: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        ul li {
-            background-color: #fafafa;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        ul li:hover {
-            background-color: #e0e0e0;
-        }
-
-        /* Aggiungi un bordo laterale per ogni blocco */
-        .block {
-            border-left: 5px solid #3498db;
-        }
-
-        /* Stile per la parte dell'affermazione vera/falsa */
-        ul li span {
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        .true {
-            color: green;
-        }
-
-        .false {
-            color: red;
-        }
-
-        /* Responsività */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .block {
-                padding: 15px;
-            }
-
-            h3 {
-                font-size: 1.3rem;
-            }
         }
     </style>
 </head>
@@ -91,58 +15,204 @@
     <div class="block">
         <h3>Primo blocco</h3>
         <ul>
-            <li>1. A routine is a part of a program. <span class="true">(true)</span></li>
-            <li>2. As routines change, they gain stability. <span class="false">(false)</span></li>
-            <li>3. Organization theory is in a critical position. <span class="false">(false)</span></li>
-            <li>4. Routines or schedules in Clinical Practice are not easy to follow. <span class="true">(true)</span></li>
-            <li>5. Emergency care often calls for quick reaction and not protocol. <span class="true">(true)</span></li>
-            <li>6. Members of staff should follow protocols set out by the departments. <span class="true">(true)</span></li>
-            <li>7. As the work is so long and tiring members of staff might work 12 hour shifts. <span class="false">(false)</span></li>
-            <li>8. Surgeons work in the emergency department every weekend and are on duty in general surgery as well as the out patients' one weekend in three, for a couple of hours. <span class="false">(false)</span></li>
-            <li>9. A typical day for a surgeon begins at 8.00 a.m. when he checks his duty schedule. <span class="true">(true)</span></li>
-            <li>10. The doctor sometimes finds time to calm and soothe the patients. <span class="true">(true)</span></li>
-            <li>11. When a doctor hears a beeper he must run to the casualty department. <span class="false">(false)</span></li>
-            <li>12. A surgeon checks dressings and drainage tubes on both pre and post operative patients. <span class="false">(false)</span></li>
-            <li>13. The staff nurse checks over the case notes after the surgeon's prescription. <span class="false">(false)</span></li>
-            <li>14. The surgeon may assist in the theatre when he is on duty and on call in General Surgery. <span class="false">(false)</span></li>
-            <li>15. Patients who undergo operations insert cannulae. <span class="false">(false)</span></li>
-            <li>16. The nursing staff contacts the anaesthetist as regards pre-medication. <span class="false">(false)</span></li>
-            <li>17. The nursing staff fill in discharge forms. <span class="false">(false)</span></li>
-            <li>18. The surgeon must always find time to speak to patients' relatives. <span class="false">(false)</span></li>
-            <li>19. The surgeon often looks up some medical abstracts in the library. <span class="false">(false)</span></li>
-            <li>20. Operation day is a routine day. <span class="false">(false)</span></li>
+            <li>1. A routine is a part of a program. (true)</li>
+            <li>2. As routines change, they gain stability. (false)</li>
+            <li>3. Organization theory is in a critical position. (false)</li>
+            <li>4. Routines or schedules in Clinical Practice are not easy to follow. (true)</li>
+            <li>5. Emergency care often calls for quick reaction and not protocol. (true)</li>
+            <li>6. Members of staff should follow protocols set out by the departments. (true)</li>
+            <li>7. As the work is so long and tiring members of staff might work 12 hour shifts. (false)</li>
+            <li>8. Surgeons work in the emergency department every weekend and are on duty in general surgery as well as the out patients' one weekend in three, for a couple of hours. (false)</li>
+            <li>9. A typical day for a surgeon begins at 8.00 a.m. when he checks his duty schedule. (true)</li>
+            <li>10. The doctor sometimes finds time to calm and soothe the patients. (true)</li>
+            <li>11. When a doctor hears a beeper he must run to the casualty department. (false)</li>
+            <li>12. A surgeon checks dressings and drainage tubes on both pre and post operative patients. (false)</li>
+            <li>13. The staff nurse checks over the case notes after the surgeon's prescription. (false)</li>
+            <li>14. The surgeon may assist in the theatre when he is on duty and on call in General Surgery. (false)</li>
+            <li>15. Patients who undergo operations insert cannulae. (false)</li>
+            <li>16. The nursing staff contacts the anaesthetist as regards pre-medication. (false)</li>
+            <li>17. The nursing staff fill in discharge forms. (false)</li>
+            <li>18. The surgeon must always find time to speak to patients' relatives. (false)</li>
+            <li>19. The surgeon often looks up some medical abstracts in the library. (false)</li>
+            <li>20. Operation day is a routine day. (false)</li>
         </ul>
     </div>
 
     <div class="block">
         <h3>Secondo blocco</h3>
         <ul>
-            <li>1. The patient in the Orthopaedic Out-Patients' Department still has his ankle in plaster. <span class="false">(false)</span></li>
-            <li>2. The Orthopaedic Surgeon would rather just look at the x-rays than see the patient's ankle. <span class="false">(false)</span></li>
-            <li>3. The patient has been attending the Rehabilitation Centre since his operation. <span class="false">(false)</span></li>
-            <li>4. The patient had an operation on his ankle some time before. <span class="true">(true)</span></li>
-            <li>5. Since the operation the patient has not been feeling too bad. <span class="false">(false)</span></li>
-            <li>6. The patient feels better thanks to the physiotherapy sessions. <span class="true">(true)</span></li>
-            <li>7. The doctor seems to be a little astonished by the patient. <span class="true">(true)</span></li>
-            <li>8. The biologist can't find the slides. <span class="false">(false)</span></li>
-            <li>9. The lab. technician is getting a telling off. <span class="true">(true)</span></li>
-            <li>10. The biologist has been behaving strangely. <span class="true">(true)</span></li>
-            <li>11. The biologist doesn't believe her workmate. <span class="true">(true)</span></li>
-            <li>12. Mr. Miles has gone for a chest x-ray to see if he has got over the flu. <span class="false">(false)</span></li>
-            <li>13. The after effects of flu have left Mr. Miles with a cough. <span class="true">(true)</span></li>
-            <li>14. Mr. Miles hasn't been feeling well for some time and now he's worried. <span class="true">(true)</span></li>
-            <li>15. Mr. Miles has to take off all his clothes apart from his vest, trousers and pants. <span class="false">(false)</span></li>
-            <li>16. The radiographer only needs to take one x-ray of the patient's chest. <span class="false">(false)</span></li>
-            <li>17. Mr. Miles tries to find out about the x-ray from the radiologist. <span class="false">(false)</span></li>
-            <li>18. The radiographer doesn't want to tell Mr. Miles how ill he is. <span class="false">(false)</span></li>
-            <li>19. Mr. Miles has always been healthy. <span class="true">(true)</span></li>
-            <li>20. Even if he's elderly he gets breathless. <span class="true">(true)</span></li>
-            <li>21. Mr. Miles can get dressed and wait in the waiting room. <span class="true">(true)</span></li>
-            <li>22. The radiographer will tell Mr. Miles the results of the x-ray later. <span class="false">(false)</span></li>
+            <li>1. The patient in the Orthopaedic Out-Patients' Department still has his ankle in plaster. (false)</li>
+            <li>2. The Orthopaedic Surgeon would rather just look at the x-rays than see the patient's ankle. (false)</li>
+            <li>3. The patient has been attending the Rehabilitation Centre since his operation. (false)</li>
+            <li>4. The patient had an operation on his ankle some time before. (true)</li>
+            <li>5. Since the operation the patient has not been feeling too bad. (false)</li>
+            <li>6. The patient feels better thanks to the physiotherapy sessions. (true)</li>
+            <li>7. The doctor seems to be a little astonished by the patient. (true)</li>
+            <li>8. The biologist can't find the slides. (false)</li>
+            <li>9. The lab. technician is getting a telling off. (true)</li>
+            <li>10. The biologist has been behaving strangely. (true)</li>
+            <li>11. The biologist doesn't believe her workmate. (true)</li>
+            <li>12. Mr. Miles has gone for a chest x-ray to see if he has got over the flu. (false)</li>
+            <li>13. The after effects of flu have left Mr. Miles with a cough. (true)</li>
+            <li>14. Mr. Miles hasn't been feeling well for some time and now he's worried. (true)</li>
+            <li>15. Mr. Miles has to take off all his clothes apart from his vest, trousers and pants. (false)</li>
+            <li>16. The radiographer only needs to take one x-ray of the patient's chest. (false)</li>
+            <li>17. Mr. Miles tries to find out about the x-ray from the radiologist. (false)</li>
+            <li>18. The radiographer doesn't want to tell Mr. Miles how ill he is. (false)</li>
+            <li>19. Mr. Miles has always been healthy. (true)</li>
+            <li>20. Even if he's elderly he gets breathless. (true)</li>
+            <li>21. Mr. Miles can get dressed and wait in the waiting room. (true)</li>
+            <li>22. The radiographer will tell Mr. Miles the results of the x-ray later. (false)</li>
         </ul>
     </div>
 
-    <!-- Aggiungere gli altri blocchi qui se necessario -->
+    <div class="block">
+        <h3>Terzo blocco</h3>
+        <ul>
+            <li>1. The National Health Service in the U.K. is a public fund. (false)</li>
+            <li>2. England, Scotland, Wales and Northern Ireland have different healthcare management. (true)</li>
+            <li>3. In the U.K., primary healthcare is available for every citizen without discrimination. (true)</li>
+            <li>4. Ophthalmology and dentistry are public services. (true)</li>
+            <li>5. The Department of Health is responsible for the NHS in Scotland. (true)</li>
+            <li>6. The U.S. has not got government-run healthcare. (true)</li>
+            <li>7. Most people in the U.S. have health insurance through government programs. (false)</li>
+            <li>8. Emergency services are mandatory and free in the U.S. (true)</li>
+            <li>9. Hospital organization is not based on multi-disciplinary management. (false)</li>
+            <li>10. The system of administration in the U.K. is known as the General Administration. (false)</li>
+            <li>11. A doctor, a nurse and an executive are the three representatives of the Management Team. (false)</li>
+            <li>12. The National Health Service in the U.K. has many different staff groups for patient care. (true)</li>
+            <li>13. The Director of Nursing Services is responsible for the medical staff. (false)</li>
+            <li>14. A Ward Sister is in charge of many different units. (false)</li>
+            <li>15. A G.R.N. is not a qualified professional. (false)</li>
+            <li>16. There are various grades of nursing staff. (true)</li>
+            <li>17. An orthoptist is a qualified technician. (false)</li>
+            <li>18. Therapeutic care is only the responsibility of skilled professionals, such as EEG technicians. (false)</li>
+            <li>19. Shifts are always 8 hour shifts. (false)</li>
+            <li>20. Most hospital workers are off duty at weekends. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Quarto blocco</h3>
+        <ul>
+            <li>1. The hospital can be compared to a small town because of the number of people who work there. (true)</li>
+            <li>2. Some emergency events or procedures must be taken care of first. (true)</li>
+            <li>3. Both the medical ward and the surgical ward have the same Staff Nurse. (false)</li>
+            <li>4. The Ward state is important to know how many patients may be admitted and how many beds are vacant. (false)</li>
+            <li>5. The lab. tests are carried out in the wards. (true)</li>
+            <li>6. Labelling test tubes and specimen jars is only a formality. (false)</li>
+            <li>7. Somebody must accompany in-patients to other departments for tests and investigations. (true)</li>
+            <li>8. Some patients are bedridden. (false)</li>
+            <li>9. Health professionals have a duty to check the patients on the operation list. (true)</li>
+            <li>10. "Nil by mouth" is on a card on the patient's bedside table to remind him that he can't eat. (false)</li>
+            <li>11. When nurses in the Surgical Ward make the patients' beds, they never place pillows on the beds unless the patient undergoes an operation. (false)</li>
+            <li>12. It's a problem to queue up in the X-Ray department because the department is so crowded. (false)</li>
+            <li>13. The anaesthetist does not agree about the kind of anaesthetic to be used on the patients. (true)</li>
+            <li>14. The scrub nurse is helping the surgeon into the operation gown. (true)</li>
+            <li>15. The scrub nurse is giving the surgeon a hand with the operations. (true)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Quinto blocco</h3>
+        <ul>
+            <li>9. Arterial blood has a lower concentration of oxygen content. (false)</li>
+            <li>10. Blood is generally received through the arteries and then sent out through the veins. (true)</li>
+            <li>11. The sinoatrial node is better known as the natural pacemaker of the heart. (true)</li>
+            <li>12. The sinoatrial node is situated in the right ventricle. (false)</li>
+            <li>13. The relaxation phase of the heart is called systole. (false)</li>
+            <li>14. When a chamber of the heart contracts and ejects blood this is termed systole. (true)</li>
+            <li>15. A tracing that represents the electrical activity of the heart is called an electrocardiogram. (true)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Sesto blocco</h3>
+        <ul>
+            <li>1. The heart lies in the thorax and to the right of the sternum. (false)</li>
+            <li>2. The endocardium encloses the heart muscle and protects it. (false)</li>
+            <li>3. The heart has four chambers: three on the right and one on the left. (false)</li>
+            <li>4. The heart muscle is also called the myocardium. (true)</li>
+            <li>5. The lower chambers of the heart are called atria. (false)</li>
+            <li>6. The right side pumps oxygenated blood through the lungs. (false)</li>
+            <li>7. The mitral valve lies between the right atrium and the left ventricle. (false)</li>
+            <li>8. There are four valves in the heart. (true)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Settimo blocco</h3>
+        <ul>
+            <li>1. MI occurs when the heart's pumping ability is impaired. (true)</li>
+            <li>2. Restriction in blood supply or oxygen shortage may lead to the patient's death. (true)</li>
+            <li>3. Coronary atherosclerosis may lead to MI. (true)</li>
+            <li>4. Atherosclerosis means sclerosis and thickening of the arterial walls. (false)</li>
+            <li>5. When the arterial walls harden, cholesterol plaques form inside the arterial lumen. (false)</li>
+            <li>6. Blood clots cause coronary arteries to block blood flow to the heart. (false)</li>
+            <li>7. The predisposing factors of MI are only angina, stroke, heredity and obesity since the other factors should be considered only if there is a history of MI. (false)</li>
+            <li>8. The onset of MI is characterized by a constrictive, choking and crushing chest pain radiating to the left part of the body. (true)</li>
+            <li>9. A coronary angiogram is an extremely invasive procedure used to examine the chambers of the heart by means of a catheter. (false)</li>
+            <li>10. Coronary catheterization is carried out for diagnostic reasons only. (false)</li>
+            <li>11. Admission to hospital is recommended in all cases of MI. (true)</li>
+            <li>12. The patient's life may depend on early and prompt diagnosis and treatment. (true)</li>
+            <li>13. Physical exertion and chronic stress are to be avoided in all cases of MI. (true)</li>
+            <li>14. CPR is generally performed when the heart is still beating. (false)</li>
+            <li>15. Physical activity is not to be resumed after an MI. (false)</li>
+            <li>16. Various types of drugs may be used in the treatment of MI including aspirin. (true)</li>
+            <li>17. Statin drugs are used in the prevention of atheromata. (true)</li>
+            <li>18. More than fifty percent of men affected by MI die within 48 hours after onset of pain. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Ottavo blocco</h3>
+        <ul>
+            <li>1. The brain is a very soft jelly. (false)</li>
+            <li>2. The meninges surround the brain without protecting it appropriately. (false)</li>
+            <li>3. The main parts of the brain are called the cerebrum, the brainstem and the cerebellum. (true)</li>
+            <li>4. The main parts of the brain are called the despace which is with caterpillar fid. (false)</li>
+            <li>5. Glia are the supporting cells of the nervous system. (true)</li>
+            <li>6. The brain possesses three lobes called parietal, temporal and occipital lobes. (false)</li>
+            <li>7. Movement, coordination, speech and vision are all controlled by the frontal lobes. (false)</li>
+            <li>8. The corpus callosum is a connecting fiber between the cerebral hemispheres. (true)</li>
+            <li>9. Breathing, blood pressure, pulse rate and sleep are defined as voluntary actions because they happen automatically, without thinking. (false)</li>
+            <li>10. The three main parts of the nervous system are the central nervous system and the peripheral nervous system. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Nono blocco</h3>
+        <ul>
+            <li>1. The occipital lobes of the brain are responsible for movement. (false)</li>
+            <li>2. Cerebellum coordinates the voluntary muscles of the body. (true)</li>
+            <li>3. The somatic nervous system controls involuntary muscles. (false)</li>
+            <li>4. Damage to the cerebellum results in coordination loss. (true)</li>
+            <li>5. The spinal cord connects to the brain and the muscles of the body. (true)</li>
+            <li>6. Impulses from the spinal cord can pass from one side of the brain to another. (true)</li>
+            <li>7. Cranial nerves carry impulses to and from the spinal cord. (false)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Decimo blocco</h3>
+        <ul>
+            <li>1. Neurons are specialized cells that send signals throughout the body. (true)</li>
+            <li>2. Neurons have axons and dendrites to transmit messages. (true)</li>
+            <li>3. The main role of axons is to receive signals. (false)</li>
+            <li>4. The synaptic gap is where messages travel between neurons. (true)</li>
+            <li>5. Electrical impulses are used for messages in the nervous system. (true)</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h3>Undicesimo blocco</h3>
+        <ul>
+            <li>1. All cells in the body have a membrane potential. (true)</li>
+            <li>2. The action potential travels along the axon to the synaptic terminal. (true)</li>
+            <li>3. The action potential is not influenced by the amount of neurotransmitter released. (false)</li>
+            <li>4. The synaptic terminal is where neurotransmitters are released. (true)</li>
+        </ul>
+    </div>
 
 </body>
 </html>
