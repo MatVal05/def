@@ -3,65 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gioco Vero o Falso</title>
+    <title>Test con affermazioni</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { text-align: center; margin-top: 50px; }
-        .question { font-size: 20px; margin-bottom: 20px; }
-        .button { padding: 10px 20px; font-size: 18px; margin: 10px; cursor: pointer; }
-        .result { font-size: 22px; margin-top: 20px; }
+        .block {
+            margin-bottom: 30px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Gioco Vero o Falso</h1>
-        <div class="question" id="question">Clicca per iniziare!</div>
-        <button class="button" onclick="answer(true)">Vero</button>
-        <button class="button" onclick="answer(false)">Falso</button>
-        <div class="result" id="result"></div>
-    </div>
 
-    <script>
-        const questions = [
-            { text: "A routine is a part of a program.", answer: true },
-            { text: "As routines change, they gain stability.", answer: false },
-            { text: "Emergency care often calls for quick reaction and not protocol.", answer: true },
-            { text: "Surgeons work in the emergency department every weekend and are on duty in general surgery.", answer: false },
-            { text: "The patient in the Orthopaedic Out-Patients' Department still has his ankle in plaster.", answer: true },
-            { text: "The heart lies in the thorax and to the right of the sternum.", answer: false }
-            // Aggiungi tutte le altre domande qui, seguendo lo stesso formato
-        ];
+    <form>
+        <!-- Primo blocco -->
+        <div class="block">
+            <h3>Primo blocco</h3>
+            <div class="question">
+                <label>1. A routine is a part of a program.</label><br>
+                <input type="radio" name="q1" value="true"> Vero
+                <input type="radio" name="q1" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>2. As routines change, they gain stability.</label><br>
+                <input type="radio" name="q2" value="true"> Vero
+                <input type="radio" name="q2" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>3. Organization theory is in a critical position.</label><br>
+                <input type="radio" name="q3" value="true"> Vero
+                <input type="radio" name="q3" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>4. Routines or schedules in Clinical Practice are not easy to follow.</label><br>
+                <input type="radio" name="q4" value="true"> Vero
+                <input type="radio" name="q4" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>5. Emergency care often calls for quick reaction and not protocol.</label><br>
+                <input type="radio" name="q5" value="true"> Vero
+                <input type="radio" name="q5" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>6. Members of staff should follow protocols set out by the departments.</label><br>
+                <input type="radio" name="q6" value="true"> Vero
+                <input type="radio" name="q6" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>7. As the work is so long and tiring members of staff might work 12 hour shifts.</label><br>
+                <input type="radio" name="q7" value="true"> Vero
+                <input type="radio" name="q7" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>8. Surgeons work in the emergency department every weekend and are on duty in general surgery as well as the out patients' one weekend in three, for a couple of hours.</label><br>
+                <input type="radio" name="q8" value="true"> Vero
+                <input type="radio" name="q8" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>9. A typical day for a surgeon begins at 8.00 a.m. when he checks his duty schedule.</label><br>
+                <input type="radio" name="q9" value="true"> Vero
+                <input type="radio" name="q9" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>10. The doctor sometimes finds time to calm and soothe the patients.</label><br>
+                <input type="radio" name="q10" value="true"> Vero
+                <input type="radio" name="q10" value="false"> Falso
+            </div>
+        </div>
 
-        let currentQuestionIndex = 0;
-        let score = 0;
+        <!-- Secondo blocco -->
+        <div class="block">
+            <h3>Secondo blocco</h3>
+            <div class="question">
+                <label>1. The patient in the Orthopaedic Out-Patients' Department still has his ankle in plaster.</label><br>
+                <input type="radio" name="q11" value="true"> Vero
+                <input type="radio" name="q11" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>2. The Orthopaedic Surgeon would rather just look at the x-rays than see the patient's ankle.</label><br>
+                <input type="radio" name="q12" value="true"> Vero
+                <input type="radio" name="q12" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>3. The patient has been attending the Rehabilitation Centre since his operation.</label><br>
+                <input type="radio" name="q13" value="true"> Vero
+                <input type="radio" name="q13" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>4. The patient had an operation on his ankle some time before.</label><br>
+                <input type="radio" name="q14" value="true"> Vero
+                <input type="radio" name="q14" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>5. Since the operation the patient has not been feeling too bad.</label><br>
+                <input type="radio" name="q15" value="true"> Vero
+                <input type="radio" name="q15" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>6. The patient feels better thanks to the physiotherapy sessions.</label><br>
+                <input type="radio" name="q16" value="true"> Vero
+                <input type="radio" name="q16" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>7. The doctor seems to be a little astonished by the patient.</label><br>
+                <input type="radio" name="q17" value="true"> Vero
+                <input type="radio" name="q17" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>8. The biologist can't find the slides.</label><br>
+                <input type="radio" name="q18" value="true"> Vero
+                <input type="radio" name="q18" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>9. The lab. technician is getting a telling off.</label><br>
+                <input type="radio" name="q19" value="true"> Vero
+                <input type="radio" name="q19" value="false"> Falso
+            </div>
+        </div>
 
-        function displayQuestion() {
-            document.getElementById("question").textContent = questions[currentQuestionIndex].text;
-            document.getElementById("result").textContent = "";
-        }
+        <!-- Terzo blocco -->
+        <div class="block">
+            <h3>Terzo blocco</h3>
+            <div class="question">
+                <label>1. The National Health Service in the U.K. is a public fund.</label><br>
+                <input type="radio" name="q20" value="true"> Vero
+                <input type="radio" name="q20" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>2. England, Scotland, Wales and Northern Ireland have different healthcare management.</label><br>
+                <input type="radio" name="q21" value="true"> Vero
+                <input type="radio" name="q21" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>3. In the U.K., primary healthcare is available for every citizen without discrimination.</label><br>
+                <input type="radio" name="q22" value="true"> Vero
+                <input type="radio" name="q22" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>4. Ophthalmology and dentistry are public services.</label><br>
+                <input type="radio" name="q23" value="true"> Vero
+                <input type="radio" name="q23" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>5. The Department of Health is responsible for the NHS in Scotland.</label><br>
+                <input type="radio" name="q24" value="true"> Vero
+                <input type="radio" name="q24" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>6. The U.S. has not got government-run healthcare.</label><br>
+                <input type="radio" name="q25" value="true"> Vero
+                <input type="radio" name="q25" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>7. Most people in the U.S. have health insurance through government programs.</label><br>
+                <input type="radio" name="q26" value="true"> Vero
+                <input type="radio" name="q26" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>8. Emergency services are mandatory and free in the U.S.</label><br>
+                <input type="radio" name="q27" value="true"> Vero
+                <input type="radio" name="q27" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>9. Hospital organization is not based on multi-disciplinary management.</label><br>
+                <input type="radio" name="q28" value="true"> Vero
+                <input type="radio" name="q28" value="false"> Falso
+            </div>
+        </div>
 
-        function answer(userAnswer) {
-            const correctAnswer = questions[currentQuestionIndex].answer;
-            if (userAnswer === correctAnswer) {
-                score++;
-                document.getElementById("result").textContent = "Risposta corretta!";
-            } else {
-                document.getElementById("result").textContent = "Risposta sbagliata.";
-            }
+        <!-- Quarto blocco -->
+        <div class="block">
+            <h3>Quarto blocco</h3>
+            <div class="question">
+                <label>1. Gli ospedali hanno un reparto di cardiologia.</label><br>
+                <input type="radio" name="q29" value="true"> Vero
+                <input type="radio" name="q29" value="false"> Falso
+            </div>
+            <div class="question">
+                <label>2. La sala operatoria è accessibile al pubblico.</label><br>
+                <input type="radio" name="q30" value="true"> Vero
+                <input type="radio" name="q30" value="false"> Falso
+            </div>
+        </div>
 
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questions.length) {
-                setTimeout(displayQuestion, 1000); // Mostra la prossima domanda dopo 1 secondo
-            } else {
-                setTimeout(() => {
-                    document.getElementById("question").textContent = "Gioco finito! Punteggio: " + score;
-                    document.getElementById("result").textContent = "";
-                }, 1000);
-            }
-        }
+        <!-- Quinto blocco -->
+        <div class="block">
+            <h3>Quinto blocco</h3>
+            <div class="question">
+                <label>1. La radiologia è una branca della medicina che si occupa di esami diagnostici.</label><br>
+                <input type="radio" name="q31" value="true"> Vero
+                <input type="radio" name="q31" value="false"> Falso
+            </div>
+        </div>
 
-        // Inizializza la prima domanda
-        displayQuestion();
-    </script>
+        <!-- Sesto blocco -->
+        <div class="block">
+            <h3>Sesto blocco</h3>
+            <div class="question">
+                <label>1. I chirurghi effettuano operazioni quotidianamente.</label><br>
+                <input type="radio" name="q32" value="true"> Vero
+                <input type="radio" name="q32" value="false"> Falso
+            </div>
+        </div>
+
+        <!-- Settimo blocco -->
+        <div class="block">
+            <h3>Settimo blocco</h3>
+            <div class="question">
+                <label>1. L'assistenza primaria è garantita da medici di base.</label><br>
+                <input type="radio" name="q33" value="true"> Vero
+                <input type="radio" name="q33" value="false"> Falso
+            </div>
+        </div>
+
+        <!-- Ottavo blocco -->
+        <div class="block">
+            <h3>Ottavo blocco</h3>
+            <div class="question">
+                <label>1. Le urgenze mediche vengono trattate senza prenotazione.</label><br>
+                <input type="radio" name="q34" value="true"> Vero
+                <input type="radio" name="q34" value="false"> Falso
+            </div>
+        </div>
+
+        <div class="block">
+            <button type="submit">Invia Risposte</button>
+        </div>
+    </form>
+
 </body>
 </html>
